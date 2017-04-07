@@ -96,7 +96,7 @@ namespace TechJobs.Data
         public Job Find(int id)
         {
             var results = from j in Jobs
-                          where j.ID == id
+                          where j.Id == id
                           select j;
 
             return results.Single();
